@@ -41,9 +41,16 @@ function App() {
     <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
       <Row gutter={16}>
         <Col className="gutter-row">
-          <Title>Blog Posting App</Title>
+          <Title>E - Commerce Website</Title>
         </Col>
       </Row>
+      <Divider orientation="center">Navigation</Divider>
+
+<Row>
+  <nav>
+    <Link to="/home"><FaHome /> Home </Link> |{" "}
+    <Link to="/profile">Profile </Link>
+  </nav>
       <Divider orientation="center">Items</Divider>
 
       <Row gutter={16}>
@@ -58,13 +65,7 @@ function App() {
             );
           })}
       </Row>
-      <Divider orientation="center">Navigation</Divider>
 
-      <Row>
-        <nav>
-          <Link to="/home"><FaHome /> Home </Link> |{" "}
-          <Link to="/profile">Profile </Link>
-        </nav>
       </Row>
       <Divider orientation="center">Page</Divider>
       <Row>

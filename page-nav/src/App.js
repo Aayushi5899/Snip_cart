@@ -16,8 +16,14 @@ function App() {
 
   return (
     <div>
+      <Row style={{background:"yellow"}}>
+        <ul>
+          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/login">Login</Link></li>
+        </ul>
+        </Row>
       <Routes>
-        <Route path="/" element={<Login auth={authenticate}/>} />
+        <Route path="/login" element={<Login auth={authenticate}/>} />
         <Route path="/home" element={<Home logout={logout} status={status}/>} />
       </Routes>
     </div>
